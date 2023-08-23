@@ -22,7 +22,7 @@ Berikut merupakan kriteria yang perlu dipenuhi dalam membuat submission ini.
 Berikut merupakan beberapa saran yang dapat ditambahkan.
 
 - [ ] Menerapkan tampilan aplikasi yang menarik.
-  - Memiliki pemilihan warna yang pas dengan tema aplikasi. Dalam memilih warna, Anda dapat memanfaatkan tools pemilihan warna seperti [colorhunt.co](colorhunt.co).
+  - Memiliki pemilihan warna yang pas dengan tema aplikasi. Dalam memilih warna, Anda dapat memanfaatkan tools pemilihan warna seperti [colorhunt.co](http://colorhunt.co).
   - Tata letak elemen yang pas.<br> Contoh: Tidak ada konten yang bertumpuk.
   - Penggunaan font yang pas dengan tema.
   - Penerapan padding dan margin yang pas.
