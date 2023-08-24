@@ -1,42 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bengkel Impact</title>
-    <link rel="icon" href="./src/img/paimon.792472e0.png">
-    <link rel="stylesheet" href="./src/css/style.css">
-</head>
-<body>
-    <header>
-        <nav class="container">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="container">
-        <div class="content" id="home">
-            <div id="article">
-                <h1>Artikel</h1>
-                <div id="articles"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bengkel Impact</title>
+        <link rel="icon" href="./src/img/paimon.792472e0.png" />
+        <link rel="stylesheet" href="./src/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div id="home"></div>
+        <header id="navbar">
+            <nav class="container">
+                <h1>Bengkel Genshin</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container" id="mainEl">
+            <div class="content">
+                <div id="article">
+                    <h1>Artikel</h1>
+                    <div id="articles"></div>
+                </div>
+                <aside>
+                    <div id="img_profil"></div>
+                    <div id="text_profil">
+                        <h1 id="username_card"></h1>
+                        <div id="resin">
+                            <h4><span id="resinIcon"></span>Original Resin</h4>
+                            <div>
+                                <label for="resin" id="resinLabel">78/160</label>
+                                <progress
+                                    value="0"
+                                    max="160"
+                                    id="resinBar"
+                                    pseudo="-webkit-progress-value"
+                                ></progress>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
             </div>
-            <aside>
-                <h1 id="username_card"></h1>
-                <label id="persentase">78/160</label><br>
-                <progress value="78" max="160"></progress>
-                <div></div>
-            </aside>
-        </div>
-        <div id="about">
-            <h1>About</h1>
-        </div>
-    </main>
-    <footer>
-
-    </footer>
-    <script src="./src/js/data.js" id="data" data-name="main-data"></script>
-    <script src="./src/js/index.js"></script>
-</body>
+            <div id="about">
+                <h1>About</h1>
+                <div id="aboutP">
+                    <p>
+                        Web ini merupakan sebuah halaman utama yang terinspirasi dari web HoyoLAB
+                        yang sering saya kunjungi setiap harinya. Selain untuk membaca postingan
+                        Official dari Hoyoverse, saya pun mengunjunginya untuk melihat berbagai
+                        postingan yang dibuat oleh berbagai user di kolom forum. Melalui postingan
+                        mereka saya dapat menemukan informasi seperti guide alias arahan untuk
+                        menyelesaikan berbagai goals yang ingin saya capai di dalam game dari
+                        Hoyoverse khususnya Genshin Impact.
+                    </p>
+                    <p>
+                        Pada halaman web ini terdapat beberapa bagian utama seperti navbar, main dan
+                        footer. Pada elemen nav terdapat judul web dan dua navigasi menuju home
+                        alias main dan about menuju bagian ini. Pada elemen main, terdapat beberapa
+                        bagian utama yaitu artikel dan user data alias aside dan about. Pada
+                        tampilan potrait mobile tepatnya ketika layar kurang dari 1200px, aside akan
+                        dipindah di bawah artikel agar lebar dari artikel dan aside tidak terlalu
+                        sempit. Selain itu nav dibuat fixed agar dapat diakses meskipun sedang
+                        berada di bagian bawah pada halaman.
+                    </p>
+                    <p>
+                        Halaman web ini juga memanfaatkan Javascript dalam menyusun elemen dan style
+                        yang lebih dinamis. mulai dari konten pada artikel sehingga lebih efektif
+                        bahkan ukuran margin top yang digunakan pada elemen main agar tidak tertimpa
+                        oleh elemen header.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="sosmed">
+                <a href="https://www.instagram.com/malba_mario/" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="https://www.facebook.com/mario.bawu" target="_blank"
+                    ><i class="fab fa-facebook"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/mario-bawu-17b222163/" target="_blank"
+                    ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/Malbamario" target="_blank"
+                    ><i class="fab fa-github"></i
+                ></a>
+                <a href="mailto:malba324@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </footer>
+        <script src="./src/js/data.js" id="data" data-name="main-data"></script>
+        <script src="./src/js/index.js"></script>
+    </body>
 </html>
