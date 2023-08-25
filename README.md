@@ -1,6 +1,6 @@
 # Belajar Dasar Pemrograman Web
 
-Repository ini merupakan submission untuk menyelesaikan kelas __Belajar Dasar Pemrograman Web__ dari __Dicoding__ dalam rangka __SIB Cycle 5 2023__.
+Repository ini merupakan submission untuk menyelesaikan kelas __Belajar Dasar Pemrograman Web__ dari __Dicoding__ dalam rangka __SIB Cycle 5 2023__. Halaman web yang dibangun ini merupakan sebuah halaman yang terinspirasi oleh __[HoyoLAB](https://www.hoyolab.com/)__ yang berisi berbagai informasi mengenai game-game milik __[Hoyoverse](https://www.hoyoverse.com/)__. Pada halaman ini terdapat beberapa informasi khusus tentang __[Genshin Impact](https://genshin.hoyoverse.com/)__ seperti artikel official, artikel para kreator dan informasi pengguna seperti progres pengisian _Original Resin_ (Salah satu material game).
 
 Berikut merupakan struktur dari halaman website ini.
 
@@ -17,7 +17,7 @@ Berikut merupakan kriteria yang perlu dipenuhi dalam membuat submission ini.
 - [x] Wajib menampilkan menampilkan foto di elemen `<aside>`. Anda boleh menampilkan foto diri Anda sekaligus menampilkan biodata lainnya atau Anda juga bisa menampilkan foto yang relevan dengan konten yang Anda tulis.
 - [x] Menyusun layout menggunakan __flexbox__, bukan __float__.
 - [x] Tema yang ditampilkan bebas, kecuali tema __Bandung__.
-- [ ] Semakin detail dan lengkap website Anda maka nilai submission akan makin tinggi.
+- [x] Semakin detail dan lengkap website Anda maka nilai submission akan makin tinggi.
 
 Berikut merupakan beberapa saran yang dapat ditambahkan.
 
