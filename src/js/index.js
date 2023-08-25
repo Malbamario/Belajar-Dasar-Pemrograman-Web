@@ -1,8 +1,7 @@
 // Get the navbar
 var navbar = document.getElementById("navbar");
-document.getElementById("mainEl").style.marginTop = navbar.offsetHeight.toString() + "px";
-document.getElementById("img_profil").style.backgroundImage =
-    "url(./src/img/" + data.user_data.img_name + ")";
+document.getElementById("mainEl").style.marginTop += navbar.offsetHeight.toString() + "px";
+document.getElementById("img_profil").src = "./src/img/" + data.user_data.img_name + "";
 
 const usernameEl = document.getElementById("username_card");
 const resinEl = document.getElementById("resinBar");

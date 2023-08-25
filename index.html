@@ -1,134 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bengkel Impact</title>
-        <link rel="icon" href="./src/img/paimon.792472e0.png" />
-        <link rel="stylesheet" href="./src/css/style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        />
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bengkel Impact</title>
+    <link rel="icon" href="./src/img/paimon.792472e0.png" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+
+<body>
+    <header id="navbar">
+        <nav class="container">
+            <h1>Bengkel Genshin</h1>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
         <div id="home"></div>
-        <header id="navbar">
-            <nav class="container">
-                <h1>Bengkel Genshin</h1>
-                <ul>
-                    <li><a href="#home">Beranda</a></li>
-                    <li><a href="#about">Tentang</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="container" id="mainEl">
-            <div class="content">
-                <div id="article">
-                    <h1>Artikel</h1>
-                    <div id="articles"></div>
+        <div class="content" id="mainEl">
+            <div id="article">
+                <h1>Artikel</h1>
+                <div id="articles">
+                    <article>
+                        <img class="thumbnail" src="./src/img/${e.img}" />
+                        <div class="text">
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                imperdiet, erat sit amet gravida tincidunt, mauris massa
+                                sagittis nisi, a dignissim sapien turpis vitae metus. Vestibulum
+                                placerat eu massa a elementum. Nam vel metus luctus, sodales
+                                felis quis, venenatis eros. Quisque sit amet risus sed purus
+                                pellentesque mollis at id quam.
+                            </p>
+                        </div>
+                    </article>
                 </div>
-                <aside>
-                    <div id="img_profil"></div>
-                    <div id="text_profil">
-                        <h1 id="username_card"></h1>
-                        <div id="resin">
-                            <h4><span id="resinIcon"></span>Original Resin</h4>
-                            <div>
-                                <label for="resin" id="resinLabel">78/160</label>
-                                <progress
-                                    value="0"
-                                    max="160"
-                                    id="resinBar"
-                                    pseudo="-webkit-progress-value"
-                                ></progress>
-                            </div>
+            </div>
+            <aside>
+                <img id="img_profil" />
+                <div id="text_profil">
+                    <h1 id="username_card"></h1>
+                    <div id="resin">
+                        <h4><span id="resinIcon"></span>Original Resin</h4>
+                        <div>
+                            <label for="resin" id="resinLabel">78/160</label>
+                            <progress value="0" max="160" id="resinBar" pseudo="-webkit-progress-value"></progress>
                         </div>
                     </div>
-                </aside>
-            </div>
-            <div id="about">
-                <h1>Tentang</h1>
-                <div id="aboutP">
-                    <p>
-                        Web ini merupakan sebuah halaman utama yang terinspirasi dari web HoyoLAB
-                        yang sering saya kunjungi setiap harinya. Selain untuk membaca postingan
-                        Official dari Hoyoverse, saya pun mengunjunginya untuk melihat berbagai
-                        postingan yang dibuat oleh berbagai user di kolom forum. Melalui postingan
-                        mereka saya dapat menemukan informasi seperti guide alias arahan untuk
-                        menyelesaikan berbagai goals yang ingin saya capai di dalam game dari
-                        Hoyoverse khususnya Genshin Impact.
-                    </p>
-                    <p>
-                        Pada halaman web ini terdapat beberapa bagian utama seperti navbar, main dan
-                        footer. Pada elemen nav terdapat judul web dan dua navigasi menuju home
-                        alias main dan about menuju bagian ini. Pada elemen main, terdapat beberapa
-                        bagian utama yaitu artikel dan user data alias aside dan about. Pada
-                        tampilan potrait mobile tepatnya ketika layar kurang dari 1200px, aside akan
-                        dipindah di bawah artikel agar lebar dari artikel dan aside tidak terlalu
-                        sempit. Selain itu nav dibuat fixed agar dapat diakses meskipun sedang
-                        berada di bagian bawah pada halaman. Pada footer terdapat beberapa icon yang menggunakan bantuan dari font-awesome.
-                    </p>
-                    <p>
-                        Halaman web ini juga memanfaatkan Javascript dalam menyusun elemen dan style
-                        yang lebih dinamis. mulai dari konten pada artikel sehingga lebih efektif
-                        bahkan ukuran margin top yang digunakan pada elemen main agar tidak tertimpa
-                        oleh elemen header.
-                    </p>
-                    <p>
-                        Konten pada artikel tersebut pun bersumber dari beberapa content creator dan author dari berbagai website. Berikut merupakan daftar dari sumber artikel dan gambar tersebut.
-                    </p>
-                    <ul>
-                        <li>
-                            <b>Event Version 4.0</b>
-                            <p>Tautan (gambar): <a href="https://i.ytimg.com/vi/1hJ5J5QiyIY/maxresdefault.jpg">maxresdefault.jpg</a></p>
-                        </li>
-                        <li>
-                            <b>Guide for Collect All 85 Hydroculus Locations</b>
-                            <p>Tautan (video): <a href="https://www.youtube.com/watch?v=gIMUhTw5DPE">ALL 85 Hydroculus Locations in Fontaine (Part 1 WITH TIMESTAMPS) Genshin Impact 4.0 Furina</a></p>
-                        </li>
-                        <li>
-                            <b>My Melt Team Build</b>
-                            <p>Tautan (artikel): <a href="https://www.vcgamers.com/news/build-ganyu-genshin-impact/">Build Ganyu Genshin Impact: Prioritas Skill, Artefak, Hingga Team</a></p>
-                        </li>
-                        <li>
-                            <b>Comparing Jean vs Kazuha</b>
-                            <p>Tautan (Reddit post): <a href="https://www.reddit.com/r/Genshin_Impact/comments/t3hois/explaining_sunfire_overvape/">Explaining Sunfire Overvape</a></p>
-                        </li>
-                        <li>
-                            <b>Genshin Impact beginner’s guide, tips, and tricks</b>
-                            <p>Tautan (artikel): <a href="https://www.polygon.com/genshin-impact-guides/23063935/beginners-guide-tips-tricks-quests-unlocks-seelies">www.polygon.com</a></p>
-                        </li>
-                        <li>
-                            <b>5 tips to optimize your artifacts in Genshin Impact</b>
-                            <p>Tautan (artikel): <a href="https://www.inverse.com/gaming/genshin-impact-artifacts-guide">www.inverse.com</a></p>
-                        </li>
-                        <li>
-                            <b>Foto Profil Pengguna</b>
-                            <p>Tautan (image): <a href="https://static.wikia.nocookie.net/gensin-impact/images/a/a5/Aether_Icon.png/revision/latest/scale-to-width-down/250?cb=20210214011610">Aether_Icon.webp</a></p>
-                        </li>
-                    </ul>
                 </div>
+            </aside>
+        </div>
+        <div id="about">
+            <h1>Tentang</h1>
+            <div id="aboutP">
+                <p>
+                    Web ini merupakan sebuah halaman utama yang terinspirasi dari web HoyoLAB
+                    yang sering saya kunjungi setiap harinya. Selain untuk membaca postingan
+                    Official dari Hoyoverse, saya pun mengunjunginya untuk melihat berbagai
+                    postingan yang dibuat oleh berbagai user di kolom forum. Melalui postingan
+                    mereka saya dapat menemukan informasi seperti guide alias arahan untuk
+                    menyelesaikan berbagai goals yang ingin saya capai di dalam game dari
+                    Hoyoverse khususnya Genshin Impact.
+                </p>
+                <p>
+                    Pada halaman web ini terdapat beberapa bagian utama seperti navbar, main dan
+                    footer. Pada elemen nav terdapat judul web dan dua navigasi menuju home
+                    alias main dan about menuju bagian ini. Pada elemen main, terdapat beberapa
+                    bagian utama yaitu artikel dan user data alias aside dan about. Pada
+                    tampilan potrait mobile tepatnya ketika layar kurang dari 1200px, aside akan
+                    dipindah di bawah artikel agar lebar dari artikel dan aside tidak terlalu
+                    sempit. Selain itu nav dibuat fixed agar dapat diakses meskipun sedang
+                    berada di bagian bawah pada halaman. Pada footer terdapat beberapa icon yang
+                    menggunakan bantuan dari font-awesome.
+                </p>
+                <p>
+                    Halaman web ini juga memanfaatkan Javascript dalam menyusun elemen dan style
+                    yang lebih dinamis. mulai dari konten pada artikel sehingga lebih efektif
+                    bahkan ukuran margin top yang digunakan pada elemen main agar tidak tertimpa
+                    oleh elemen header.
+                </p>
+                <p>
+                    Konten pada artikel tersebut pun bersumber dari beberapa content creator dan
+                    author dari berbagai website. Berikut merupakan daftar dari sumber artikel
+                    dan gambar tersebut.
+                </p>
+                <ul>
+                    <li>
+                        <b>Event Version 4.0</b>
+                        <p>
+                            Tautan (gambar):
+                            <a href="https://i.ytimg.com/vi/1hJ5J5QiyIY/maxresdefault.jpg">maxresdefault.jpg</a>
+                        </p>
+                    </li>
+                    <li>
+                        <b>Guide for Collect All 85 Hydroculus Locations</b>
+                        <p>
+                            Tautan (video):
+                            <a href="https://www.youtube.com/watch?v=gIMUhTw5DPE">ALL 85 Hydroculus Locations in
+                                Fontaine (Part 1 WITH
+                                TIMESTAMPS) Genshin Impact 4.0 Furina</a>
+                        </p>
+                    </li>
+                    <li>
+                        <b>My Melt Team Build</b>
+                        <p>
+                            Tautan (artikel):
+                            <a href="https://www.vcgamers.com/news/build-ganyu-genshin-impact/">Build Ganyu Genshin
+                                Impact: Prioritas Skill, Artefak, Hingga
+                                Team</a>
+                        </p>
+                    </li>
+                    <li>
+                        <b>Comparing Jean vs Kazuha</b>
+                        <p>
+                            Tautan (Reddit post):
+                            <a
+                                href="https://www.reddit.com/r/Genshin_Impact/comments/t3hois/explaining_sunfire_overvape/">Explaining
+                                Sunfire Overvape</a>
+                        </p>
+                    </li>
+                    <li>
+                        <b>Genshin Impact beginner's guide, tips, and tricks</b>
+                        <p>
+                            Tautan (artikel):
+                            <a
+                                href="https://www.polygon.com/genshin-impact-guides/23063935/beginners-guide-tips-tricks-quests-unlocks-seelies">www.polygon.com</a>
+                        </p>
+                    </li>
+                    <li>
+                        <b>5 tips to optimize your artifacts in Genshin Impact</b>
+                        <p>
+                            Tautan (artikel):
+                            <a href="https://www.inverse.com/gaming/genshin-impact-artifacts-guide">www.inverse.com</a>
+                        </p>
+                    </li>
+                    <li>
+                        <b>Foto Profil Pengguna</b>
+                        <p>
+                            Tautan (image):
+                            <a
+                                href="https://static.wikia.nocookie.net/gensin-impact/images/a/a5/Aether_Icon.png/revision/latest/scale-to-width-down/250?cb=20210214011610">
+                                Aether_Icon.webp</a>
+                        </p>
+                    </li>
+                </ul>
             </div>
-        </main>
-        <footer>
-            <div class="sosmed">
-                <a href="https://www.instagram.com/malba_mario/" target="_blank"
-                    ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="https://www.facebook.com/mario.bawu" target="_blank"
-                    ><i class="fab fa-facebook"></i
-                ></a>
-                <a href="https://www.linkedin.com/in/mario-bawu-17b222163/" target="_blank"
-                    ><i class="fab fa-linkedin"></i
-                ></a>
-                <a href="https://github.com/Malbamario" target="_blank"
-                    ><i class="fab fa-github"></i
-                ></a>
-                <a href="mailto:malba324@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-            </div>
-        </footer>
-        <script src="./src/js/data.js" id="data" data-name="main-data"></script>
-        <script src="./src/js/index.js"></script>
-    </body>
+        </div>
+    </main>
+    <footer>
+        <div class="sosmed">
+            <a href="https://www.instagram.com/malba_mario/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/mario.bawu" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/mario-bawu-17b222163/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Malbamario" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:malba324@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </footer>
+    <script src="./src/js/data.js" id="data" data-name="main-data"></script>
+    <script src="./src/js/index.js"></script>
+</body>
+
 </html>
